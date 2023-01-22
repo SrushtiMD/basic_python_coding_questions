@@ -1,5 +1,5 @@
-a = "srushti"
-b = "abhishek"
+a = input("Enter 1st string")
+b = input("Enter 2nd string")
 
 a = sorted(a.lower())
 b = sorted(b.lower())
