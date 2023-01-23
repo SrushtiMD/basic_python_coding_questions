@@ -206,6 +206,7 @@ def gcd(a, b):
 print('GCD of', a, 'and', b, 'is', gcd(a, b))
 ```
 ### 15) Write a program to print the following pattern.
+![Screenshot](https://www.notion.so/hackkeen/Assignments-c450223b69da48599ee48f3dac7101dc#07c8fe7ae72b4cbc925b7c364be97b4e)
 ```
 n = 5
 def pyramid(n):
