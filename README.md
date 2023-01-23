@@ -206,8 +206,7 @@ def gcd(a, b):
 print('GCD of', a, 'and', b, 'is', gcd(a, b))
 ```
 ### 15) Write a program to print the following pattern.
-![plot](https://www.notion.so/hackkeen/Assignments-c450223b69da48599ee48f3dac7101dc#07c8fe7ae72b4cbc925b7c364be97b4e)
-![Screenshot](https://www.notion.so/hackkeen/Assignments-c450223b69da48599ee48f3dac7101dc#07c8fe7ae72b4cbc925b7c364be97b4e)
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943388243-Image-03.png)
 ```
 n = 5
 def pyramid(n):
@@ -217,4 +216,77 @@ def pyramid(n):
         print("\r")
 pyramid(n)
 ```
+### 16) Write a program to print the following pattern.
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943728210-Image-02.png)
+```
+n = 5
+def pyramid(n):
+    a = n - 1
+    for i in range(0, n):
+        for j in range(0, a):
+            print(end=" ")
+        a = a - 1
+        for j in range(0, i+1):
+            print("* ", end="")
+        print("\r")
+pyramid(n)
+```
+### 17) Write a program to print the following pattern.
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943686701-Image-01.png)
+```
+n = 5
+def pyramid(n):
+    num = 1
+    for i in range(0, n):
+        num = 1
+        for j in range(0, i+1):
+            print(num, end=" ")
+            num = num + 1
+        print("\r")
+pyramid(n)
+```
 
+### 18) Write a program to print the following pattern.
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943443256-Image-04.png)
+```
+n = 5
+def pyramid(n):
+    num = 1
+    for i in range(0, n):
+        for j in range(0, i+1):
+            print(num, end=" ")
+            num = num + 1
+        print("\r")
+pyramid(n)
+```
+
+### 19) Write a program to print the following pattern.
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943595713-Image-05.png)
+```
+n = 5
+def pyramid(n):
+    num = 65
+    for i in range(0, n):
+        for j in range(0, i+1):
+            ch = chr(num)
+            print(ch, end=" ")
+        num = num + 1
+    
+        print("\r")
+pyramid(n)
+```
+
+### 20) Write a program to print the following pattern.
+![Screenshot](https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1661943639038-Image-06.png)
+```
+n = 5
+def pyramid(n):
+    num = 65
+    for i in range(0, n):
+        for j in range(0, i+1):
+            ch = chr(num)
+            print(ch, end=" ")
+            num = num + 1
+        print()
+pyramid(n)
+```
