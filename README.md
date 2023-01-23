@@ -146,3 +146,73 @@ def max():
 
 max()
 ```
+### 11) Write a program to find a minimum of three numbers
+```
+print("Enter Two numbers")
+a = int(input("Enter 1st Number"))
+b = int(input("Enter 2nd Number"))
+c = int(input("Enter 3rd Number"))
+
+def min():
+    if a < b & b < c:
+        print(a, "is a smaller number")
+    elif a > b & b < c:
+        print(b, "is a smaller number")
+    elif a == b == c:
+        print("The given numbers are equal")
+    else:
+        print(c, "is smaller number")
+
+min()
+```
+### 12) Write a program to find a factorial of a number
+```
+num = int(input("Enter a number: "))
+factorial = 1
+if num > 0:
+    for i in range(1,num + 1):
+        factorial = factorial*i
+    print("The factorial of given number is : ", factorial)
+elif num == 0:
+    print("The factorial of 0 is 1")
+else:
+   print("factorial does not exists for negative values")
+```
+### 13) Write a program to find a fibonacci of a number.
+```
+elements = int(input("Enter a number of elements"))
+n1, n2 = 0, 1
+print("Fibonacci Sequence:")
+for i in range(2, elements):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    print(n3)
+```
+### 14) Write a program to find GCD of two numbers
+```
+a = int(input("Enter the value of a : "))
+b = int(input("Enter the value of b : "))
+def gcd(a, b):
+    if (a == 0):
+        return b
+    if (b == 0):
+        return a
+    if (a == b):
+        return a
+    if (a > b):
+        return gcd(a-b, b)
+    return gcd(a, b-a)
+print('GCD of', a, 'and', b, 'is', gcd(a, b))
+```
+### 15) Write a program to print the following pattern.
+```
+n = 5
+def pyramid(n):
+    for i in range(0, n):
+        for j in range(0, i+1):
+            print("* ",end="")
+        print("\r")
+pyramid(n)
+```
+
